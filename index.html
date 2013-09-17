@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+	<script type="text/javascript" src="../frameworks/zepto-1.0.min.js"></script>
+	<script type="text/javascript">
+
+	$('document').ready(function() {
+		$('#site').on('click', function(e) {
+			e.preventDefault();
+			$(this).toggleClass('open');
+		})
+	})
+
+	</script>
+
+	<style type="text/css">
+
+		#one {
+			background-color: red;
+			height: 50px;
+			width: 120px;
+
+		}
+
+		#two {
+			background-color: blue;
+			height: 100px;
+			width: 120px;
+
+		}
+
+		#three {
+			background-color: green;
+			height: 900px;
+			width: 120px;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: gray;
+		}
+
+
+
+		#wrapper {
+		  width: 100%;
+		  overflow-x: hidden;
+		  background: inherit;
+		  position: relative;
+
+		position: relative;
+		margin: 0 auto;
+		/*width: 750px;*/
+		background: #f0f0f0;
+		height: auto !important;
+		/*height: 100%;
+		IE6: treaded as min-height;*/
+		min-height: 100%;
+
+		}
+		#site {
+		  width: 100%;
+		  position: relative;
+		  z-index: 10;
+		  background: white; /*inherit;*/
+		  left: 0;
+		  transition: all 0.2s ease-out;
+		  -webkit-transition: all 0.2s ease-out;
+		  transform: translate3d(0, 0, 0);
+		  -webkit-transform: translate3d(0, 0, 0);
+
+		  box-shadow: 3px 0px 15px 0px #383838;
+		}
+		#site.open {
+		  transform: translate3d(-75%, 0, 0);
+		  -webkit-transform: translate3d(-75%, 0, 0);
+		}
+		#sideNav {
+		  background: #333;
+		  color: #999;
+		  position: absolute;
+		  width: 100%;
+		  z-index: 1;
+		  height: 100%;
+		  left: 0;
+		}
+		#sideNav ul {
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		}
+		#content {
+		width: 100%;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 20px;
+		}
+
+		#sideNav li {
+		padding: 0.8em;
+		border-bottom: 1px solid #232323;
+		box-shadow: 1px 0px 1px #666;
+		font-size: 1em;
+		}
+		li.active {
+		background: #FF8500;
+		color: #E9E9E9;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<div id="sideNav">
+			<ul>
+				<li>الرئيسة</li>
+				<li>حقيبة التسوق</li>
+				<li>خدمة العملاء</li>
+				<li class="active">خدمة العملاء</li>
+				<li>خدمة العملاء</li>
+				<li>خدمة العملاء</li>
+				<li>خدمة العملاء</li>
+			</ul>
+		</div>
+
+		<div id="site">
+
+			<div id="header">هديتي</div>
+			<div id="content">
+
+				<div id="one"></div>
+				<div id="two"></div>
+				<div id="three"></div>
+
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>
