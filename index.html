@@ -112,7 +112,6 @@
 		width: 100%;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		padding: 20px;
 		}
 
 		#sideNav li {
@@ -149,25 +148,27 @@
 		}
 
 		.col {
-			box-sizing:border-box;
-			width: 50%;
+			box-sizing: border-box;
+			width: 44%;
 			float: right;
 			text-align: center;
+			margin-right: 4%;
 		}
 
 		.product {
 			/*width: 120px;*/
 			text-align: center;
-			margin: 0 auto;
-			padding-bottom: 1em;
+			margin: 0 auto 10px auto;
 			font-size: .8em;
 			color: #333;
 			font-weight: bold;
+			border:1px solid #ddd;
 		}
 
 		.product img {
+			display: block;
 			width: 100%;
-			margin-bottom: 10px;
+
 		}
 
 		.pic {
@@ -176,9 +177,9 @@
 
 		.price {
 		display: block;
-		background-color: rgba(0,0,0,0.5);
+		background-color: #999;
 		text-align: right;
-		color: #CBF9FF;
+		color: #fff;
 		padding-right: 5px;
 		}
 
@@ -192,14 +193,41 @@
 			float: left;
 			width: 50%;
 			height: 3em;
-			background-image: url('img/icons/glyphicons_012_heart.png');
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-color: #e9e9e9;
+			background-color: #333;
+		}
+
+		.btn-first {
+			border-right: 1px solid #fff;
+			box-sizing: border-box;
 		}
 
 		.button:hover {
-			background-color: #ddd;
+			background-color: #444;
+		}
+
+		.icon {
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		.icon.heart-white {
+			background-image: url('img/heart-white.png');
+		}
+
+		.icon.heart-red {
+			background-image: url('img/heart-red.png');
+		}
+
+		.icon.heart-pink {
+			background-image: url('img/heart-pink.png');
+		}
+
+		.icon.bagplus-white {
+			background-image: url('img/bagplus-white.png');
+		}
+
+		.icon.bag-red {
+			background-image: url('img/bag-red.png');
 		}
 
 		
@@ -239,23 +267,41 @@
 							<div class="price">SR 649</div>
 						</div>
 						<div class="buttons">
-							<div class="button"></div>
-							<div class="button"></div>
+							<div class="button btn-first icon heart-pink"></div>
+							<div class="button icon bagplus-white"></div>
 						</div>
 					</div>
 					<div class="product">
-						<img src="img/2.jpg" />
-						<p>SR 780</p>
+						<div class="pic">
+							<img src="img/2.jpg" /><div class="price">SR 649</div>
+							
+						</div>
+						<div class="buttons">
+							<div class="button btn-first icon heart-white"></div>
+							<div class="button icon bagplus-white"></div>
+						</div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="product">
-						<img src="img/3.jpg" />
-						<p>SR 560</p>
+						<div class="pic">
+							<img src="img/3.jpg" />
+							<div class="price">SR 649</div>
+						</div>
+						<div class="buttons">
+							<div class="button btn-first icon heart-white"></div>
+							<div class="button icon bagplus-white"></div>
+						</div>
 					</div>
 					<div class="product">
-						<img src="img/4.jpg" />
-						<p>SR 99</p>
+						<div class="pic">
+							<img src="img/4.jpg" />
+							<div class="price">SR 649</div>
+						</div>
+						<div class="buttons">
+							<div class="button btn-first icon heart-pink"></div>
+							<div class="button icon bagplus-white"></div>
+						</div>
 					</div>
 				</div>
 
